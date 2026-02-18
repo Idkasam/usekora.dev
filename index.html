@@ -51,17 +51,13 @@
     align-items: center;
   }
   .logo {
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--text);
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
-  .logo-img { height: 36px; width: auto; }
+  .logo-symbol { height: 32px; width: auto; mix-blend-mode: multiply; }
+  .logo-wordmark { height: 18px; width: auto; mix-blend-mode: multiply; }
   .nav-links {
     display: flex;
     align-items: center;
@@ -550,7 +546,8 @@
 <nav>
   <div class="container">
     <a href="/" class="logo">
-      <img src="logo.svg" alt="Kora" class="logo-img">
+      <img src="kora-logo.svg" alt="" class="logo-symbol">
+      <img src="kora-wordmark.png" alt="Kora" class="logo-wordmark">
     </a>
     <div class="nav-links">
       <a href="https://koraprotocol.com">Home</a>
