@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kora — Developer Quickstart | usekora.dev</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #E5DDD1;
@@ -56,8 +56,15 @@
     align-items: center;
     gap: 8px;
   }
-  .logo-symbol { height: 32px; width: auto; mix-blend-mode: multiply; }
-  .logo-wordmark { height: 40px; width: auto; mix-blend-mode: multiply; }
+  .logo-symbol { height: 40px; width: auto; mix-blend-mode: multiply; }
+  .logo-text {
+    font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #0f1115;
+    white-space: nowrap;
+  }
   .nav-links {
     display: flex;
     align-items: center;
@@ -547,7 +554,7 @@
   <div class="container">
     <a href="/" class="logo">
       <img src="kora-logo.svg" alt="" class="logo-symbol">
-      <img src="kora-wordmark.png" alt="Kora" class="logo-wordmark">
+      <span class="logo-text">KORA</span>
     </a>
     <div class="nav-links">
       <a href="https://koraprotocol.com">Home</a>
